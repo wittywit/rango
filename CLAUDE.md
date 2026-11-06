@@ -1,5 +1,7 @@
 # Cozy Rango (Studio Poetics): modification notes
 
+See `INDEX.md` for the file and data.json structure map.
+
 ## What this is
 A Construct 3 (Scirra) **web export** of a 2D platformer. Rango, a cat (sprite object named `Dude`), searches a valley of flowers for her sister Nila. The `.c3p` source project is NOT in this folder. Viewport 1920x1080, landscape, fullscreen PWA, with touch controls (HUD_left, HUD_right, HUD_jump).
 
