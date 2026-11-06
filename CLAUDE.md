@@ -56,3 +56,7 @@ Open http://127.0.0.1:8765/index.html. Inside the Claude Code sandbox the bind f
 - HUD_music/sound/home enlarged to 100px at y=70 (x 1620/1735/1850) in every level layout (Menu's offscreen copies left alone). Backup before this: `data.prem.json`.
 - Still unverified: real touch input and keyboard (synthetic Chrome-MCP keys and clicks never moved Dude, even after clicking the intro bubble). Test on a real phone or DevTools touch emulation.
 - Not done: Selectlevel drops are still small and crowded on phones, no portrait rotate prompt, no safe-area margins.
+
+## Git / hosting (2026-11-06)
+- Repo: https://github.com/wittywit/rango (branch main), served via GitHub Pages. Never add a Claude co-author trailer. Ask before every `git push`.
+- `.gitignore` excludes backups (`data.prem.json`, `data.previs.json`, `*.orig.webp`). Bump `offline.json` before each push.

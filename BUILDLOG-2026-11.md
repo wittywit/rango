@@ -22,3 +22,9 @@
 - Set the initially-visible flag on all 93 HUD_left/right/jump instances in data.json. Boxes stay 320px (about 83px on a 500px-wide screen). Backup `data.previs.json`, offline.json bumped to ...007.
 - Screenshot-verified in level 1: arrows bottom-left, jump bottom-right. They shrink after first interaction via existing events.
 - Movement still unverified (synthetic input never moves Dude). Open: Selectlevel drop size, rotate prompt, safe areas.
+
+## 2026-11-06: Published to GitHub
+- `git init` (branch main), single commit under the user's own identity, no Claude trailer. Pushed to https://github.com/wittywit/rango on the user's request.
+- `.gitignore` skips `.DS_Store`, `data.prem.json`, `data.previs.json`, `*.orig.webp`, `.claude/`. `data.orig.json` is tracked.
+- Intended host: GitHub Pages from main root (https://wittywit.github.io/rango/). Bump `offline.json` version on every update so the service worker doesn't serve stale files.
+- git init needed the sandbox disabled (`.git` write was blocked).
