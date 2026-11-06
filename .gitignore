@@ -1,0 +1,5 @@
+.DS_Store
+data.prem.json
+data.previs.json
+*.orig.webp
+.claude/
