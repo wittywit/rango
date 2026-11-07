@@ -34,3 +34,7 @@
 - Hit area = instance bounds, so added `images/touchpad.webp` (from `tools/touchpad.py`) with the original arrows on large transparent frames at their old screen positions. Visual is unchanged.
 - Checked: only events on family `Control` (ot 228) are single-value (opacity) actions, so nothing resizes the zones at runtime.
 - offline.json bumped to ...008, touchpad.webp added to its fileList. Backup `data.pretap.json` (gitignored). Not render-tested (sandbox blocked the local server).
+
+## 2026-11-07: Pages build fix
+- Pages build for 878d81e errored ("Page build failed") after a stuck ~10 min run. Repo is ~128 MB of webp/webm and had no `.nojekyll`, so GitHub ran Jekyll over every file.
+- Added empty `.nojekyll` so Pages serves files as-is. Stopped tracking `data.orig.json` (1.1 MB backup, kept locally, now gitignored).
