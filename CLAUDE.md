@@ -61,5 +61,5 @@ Open http://127.0.0.1:8765/index.html. Inside the Claude Code sandbox the bind f
 - Not done: Selectlevel drops are still small and crowded on phones, no portrait rotate prompt, no safe-area margins.
 
 ## Git / hosting (2026-11-06)
-- Repo: https://github.com/wittywit/rango (branch main), served via GitHub Pages. Never add a Claude co-author trailer. Ask before every `git push`.
+- Repo: https://github.com/wittywit/rango (branch main), served via GitHub Pages. Never add a Claude co-author trailer. Ask before every `git push`, and ask right away as soon as there is something to push (do not hold the question for later).
 - `.nojekyll` must stay (skips Jekyll; builds failed without it). `.gitignore` excludes backups (`data.orig.json`, `data.prem.json`, `data.previs.json`, `data.pretap.json`, `*.orig.webp`). Bump `offline.json` before each push.
