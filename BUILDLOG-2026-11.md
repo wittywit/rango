@@ -28,3 +28,9 @@
 - `.gitignore` skips `.DS_Store`, `data.prem.json`, `data.previs.json`, `*.orig.webp`, `.claude/`. `data.orig.json` is tracked.
 - Intended host: GitHub Pages from main root (https://wittywit.github.io/rango/). Bump `offline.json` version on every update so the service worker doesn't serve stale files.
 - git init needed the sandbox disabled (`.git` write was blocked).
+
+## 2026-11-07: Bigger touch tap zones
+- HUD_left/right/jump hit boxes were 320x320 game px. Now left 400x640 (x 0-400), right 420x640 (x 400-820), jump 560x640 (x 1360-1920), all spanning y 440-1080, in all 93 instances.
+- Hit area = instance bounds, so added `images/touchpad.webp` (from `tools/touchpad.py`) with the original arrows on large transparent frames at their old screen positions. Visual is unchanged.
+- Checked: only events on family `Control` (ot 228) are single-value (opacity) actions, so nothing resizes the zones at runtime.
+- offline.json bumped to ...008, touchpad.webp added to its fileList. Backup `data.pretap.json` (gitignored). Not render-tested (sandbox blocked the local server).

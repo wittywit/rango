@@ -56,6 +56,7 @@ Open http://127.0.0.1:8765/index.html. Inside the Claude Code sandbox the bind f
 ## Mobile notes (2026-11-06)
 - Touch controls are invisible hit zones: `HUD_left`/`HUD_right`/`HUD_jump` (ot 34/35/36, 320px hit boxes). Made visible 2026-11-06: all 93 instances have `inst[5][0]=true`, using the existing arrow art from sheet14 (left 897,1665; right 897,1793; jump 897,1921). Left and right sit bottom-left, jump bottom-right. Screenshot-checked in level 1; the game's own events fade/shrink them after first use. Backup before this: `data.previs.json` on the screen-fixed `Touchcontrols` layer, driven by Touch "is touching object" events. No touch-device gating.
 - HUD_music/sound/home enlarged to 100px at y=70 (x 1620/1735/1850) in every level layout (Menu's offscreen copies left alone). Backup before this: `data.prem.json`.
+- Tap zones enlarged 2026-11-07 (about 2.5x to 3.5x area): left x 0-400, right 400-820, jump 1360-1920, all y 440-1080. Frames now come from `images/touchpad.webp` (built by `tools/touchpad.py`: the same arrows at the same screen spots on big transparent frames, so art is not stretched). Family `Control` (ot 228) only fades opacity, never resizes. Backup: `data.pretap.json`.
 - Still unverified: real touch input and keyboard (synthetic Chrome-MCP keys and clicks never moved Dude, even after clicking the intro bubble). Test on a real phone or DevTools touch emulation.
 - Not done: Selectlevel drops are still small and crowded on phones, no portrait rotate prompt, no safe-area margins.
 
